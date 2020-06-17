@@ -14,7 +14,7 @@ jobs:
           - python-version: 3.7
             pysolace-whl: pysolace-0.0.1-cp37-cp37m-macosx_10_14_x86_64.whl
           - python-version: 3.8
-            pysolace-whl: pysolace-0.0.1-cp38-cp38m-macosx_10_14_x86_64.whl
+            pysolace-whl: pysolace-0.0.1-cp38-cp38-macosx_10_14_x86_64.whl
     steps:
       - uses: actions/checkout@v2
         with:
