@@ -27,3 +27,9 @@ jobs:
         run: pip install  ${{ matrix.pysolace-whl }}
       - name: test
         run: python test.py
+      - name: set release version
+        run: echo ::set-env name=RELEASE_VERSION::${GITHUB_REF#refs/*/}
+      - name: test env version
+        run: |
+          echo $RELEASE_VERSION
+          echo ${{ env.RELEASE_VERSION }}
